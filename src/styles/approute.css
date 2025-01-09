@@ -1,0 +1,43 @@
+:root {
+    --header-color: #fffde6;
+    --left-nav-color: #fff8e4;
+    --button-color: #f7a400;
+    --card-title-color: #feecd9;
+    --card-background-color: #fcf6f0;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: 'Nunito', sans-serif;
+  }
+
+  
+  .main-container{
+    display: flex;
+    margin-top: 100px;
+    overflow: hidden;
+    height: calc(100vh-100px);  
+  }
+  
+  .content{
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    background-color: rgba(246, 242, 242, 0.024);    
+  }
+  
+ 
+  
+  
+  
+  
+  
+  @media (max-width:768px){
+    .content{
+      margin: 0;
+    }
+  }

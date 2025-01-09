@@ -1,0 +1,39 @@
+.filter-download-btn button {
+    padding: 10px 20px; /* Adjusted for better size */
+    border-radius: 6px; /* Slightly rounded corners for a modern look */
+    border: none; /* Removes any default border */
+    background-color: #007BFF; /* Bright blue color */
+    color: #fff; /* White text for contrast */
+    font-weight: bold; /* Makes text prominent */
+    text-transform: capitalize; /* Ensures first letter is uppercase */
+    text-align: center; /* Centers the text */
+    font-size: 16px; /* Slightly larger font size for readability */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+/* Hover Effect */
+.filter-download-btn button:hover {
+    background-color: #0056b3; /* Darker shade of blue */
+    transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+
+/* Focus Effect */
+.filter-download-btn button:focus {
+    outline: 3px solid #80bdff; /* Adds an accessible focus outline */
+    outline-offset: 3px; /* Slight space between button and outline */
+}
+
+/* Active State */
+.filter-download-btn button:active {
+    background-color: #004085; /* Even darker blue for pressed state */
+    transform: scale(0.98); /* Slightly shrinks button on click */
+}
+
+/* Disabled State */
+.filter-download-btn button:disabled {
+    background-color: #cccccc; /* Greyed-out background */
+    color: #666666; /* Muted text color */
+    cursor: not-allowed; /* Prevents click */
+    opacity: 0.7; /* Adds transparency for visual feedback */
+}

@@ -1,0 +1,119 @@
+
+.dash-card-outer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+}
+.dash-card-heading{
+    color: rgba(0, 0, 0, 0.538);
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.dash-card-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.dash-card {
+    box-sizing: border-box;    
+    flex: 1 1 ;
+    text-align: center;
+    border-radius: 10px;    
+    border: 1px solid  rgba(255, 166, 0, 0.329);
+    overflow: hidden;
+}
+.dash-card-title{
+    padding: 12px 0;
+    position: relative;
+    font-size: 20px;
+    font-weight:800;
+    box-sizing: border-box;
+    background-color:antiquewhite;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.66);
+    
+
+}
+.dash-card-title::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 166, 0, 0.329);
+}
+.dash-card-content{
+    display: flex;
+    justify-content: space-between;
+    padding:18px;
+    position: relative;    
+    align-items: center;
+    font-size: 16px;
+    font-weight:700;
+    background-color:rgba(250, 235, 215, 0.309) ;
+    text-transform: capitalize;
+}
+.dash-card-content span:nth-child(1){
+    flex: 2;
+    text-align: left;    
+}
+.dash-card-content span:nth-child(2){
+    flex: 0;
+    text-align: center;
+    
+}
+.dash-card-content span:nth-child(3){
+    flex: 1;
+    text-align: right;      
+}
+
+
+
+.dash-card-content:not(:last-child)::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:  rgba(255, 166, 0, 0.329);
+    height: 1px;
+}
+.dash-card-content:nth-of-type(2) span:nth-child(3) {
+    color: black;
+}
+.dash-card-content:nth-of-type(3) span:nth-child(3){
+    color: green;
+}
+.dash-card-content:nth-of-type(4) span:nth-child(3){
+    color: rgb(244, 120, 11);
+}
+.dash-card-content:nth-of-type(5) span:nth-child(3){
+    color: red;
+}
+
+
+
+
+
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .dash-card {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+ /* --------------------------------------------------------- */
+
+ 

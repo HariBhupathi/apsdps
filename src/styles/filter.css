@@ -1,0 +1,138 @@
+.filter-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;    
+    padding: 10px 2px;
+    border: 1px solid seashell;
+    background-color: white;
+}
+.filter-selectall{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:5px;
+}
+.filter-selectall input {
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    cursor: pointer;        
+}
+
+.filter-selectall label {
+    margin: 0;
+    font-size: medium;
+    line-height: 1;     
+}
+.filter-download-btn
+.filter-selectall{
+    flex: 1;
+}
+.filter-select{
+    flex:2;
+    display: flex;
+    gap: 25px;
+    justify-content:flex-start;
+    align-items: center;    
+}
+.filter-select select{
+    flex:0 1 45%;
+    min-width: 125px;
+    max-width: 180px;
+    padding:8px 15px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.filter-select select:hover{
+    border-color: #ffa500;
+    background-color: fff;
+    box-shadow:  0 0 8px rgba(255, 165, 0, 0.5);;
+}
+.filter-select select option:focus{
+    border-color: #ffa500 red;
+    box-shadow: 0 0 8px rgba(255, 165, 0, 0.5);
+}
+.filter-select select option{
+    text-align: start;    
+    font-size: 14px;
+    padding: 10px;
+    color: #333;
+    background-color: #fff;
+}
+.filter-select select option:hover{
+    background-color: #ffa500;  
+    color: #fff;
+}
+/* Common styles for buttons */
+.filter-download-btn button{
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f7a500e6;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover effect for buttons */
+.filter-download-btn button:hover{
+    background-color: #f7a400;
+    transform: scale(1.01);
+    outline: 1px solid #f7a400;
+}
+
+@media (max-width: 768px){
+    .filter-main{
+        flex-direction: column; 
+        width: 100%;       
+        gap: 10px;        
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 10px 2px;
+    }
+    
+    .filter-selectall{        
+        width: 80%;         
+        justify-content:flex-start;
+        
+    }    
+
+    .filter-select{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%; 
+        gap: 10px;
+    }
+
+    .filter-select select{
+        max-width: 100%;
+        width: 100%;
+
+    }
+    .filter-download-btn{        
+        width: 100%;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+    }
+
+    .filter-download-btn button{
+        max-width: 100%;
+        width: 100%; 
+    }
+}

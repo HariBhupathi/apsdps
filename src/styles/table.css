@@ -1,0 +1,154 @@
+/* General Styles */
+.applicant-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2px 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+.applicant-table th, .applicant-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.applicant-table td img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.applicant-table th {
+  background-color: #f4f4f4;
+}
+
+.table-select-th {
+  width: 1%;
+}
+
+.table-action-td {
+  box-sizing: border-box;
+  /* background-color: lime; */
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.action-btn:last-child {
+  margin-right: 0;
+}
+
+.icon-select, .icon-reject, .icon-download, .icon-bookmark {
+  font-size: 22px;
+  color: #4CAF50;
+  transition: transform 0.2s ease;
+}
+
+.icon-bookmark {
+  color: goldenrod;
+}
+
+.icon-reject {
+  color: #f44336;
+}
+
+.icon-download {
+  color: #2196F3;
+}
+
+.icon-select:hover, .icon-reject:hover, .icon-download:hover, .icon-bookmark:hover {
+  transform: scale(1.1);
+}
+
+input[type='checkbox'] {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+}
+
+.tooltip-exp {
+  position: relative;
+  cursor: help;
+}
+
+.tooltip-exp::after {
+  position: absolute;
+  content: attr(tooltip);
+  visibility: hidden;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-exp:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.exclamation {
+  padding: 0 2px;
+  background-color: #f7a400;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.applicant-table i {
+  display: none;
+}
+
+.err-msg {
+  font-size: x-large;
+  font-weight: bolder;
+  color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .applicant-table {
+      font-size: 14px; /* Reduce font size for better readability */
+  }
+
+  .applicant-table th, .applicant-table td {
+      padding: 8px; /* Reduce padding */
+  }
+
+  .applicant-table td img {
+      width: 50px; /* Adjust image size for mobile */
+      height: 50px;
+  }
+
+  .icon-select, .icon-reject, .icon-download, .icon-bookmark {
+      font-size: 18px; /* Reduce icon size */
+  }
+
+  .tooltip-exp::after {
+      font-size: 12px; /* Adjust tooltip font size */
+      padding: 8px;
+  }
+
+  .table-outer-sec {
+      width: 100%;
+      overflow-x: auto; /* Ensure table scrolls horizontally on small screens */
+  }
+  .err-msg {
+      font-size: large; /* Adjust error message size */
+  }
+  .table-action-btn-sec{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
