@@ -36,7 +36,7 @@ const SelectedProfile = () => {
           result = result.filter((each) => each.experience === filters.experience);
         }
         return result;
-      }, [filters, rawData]);
+      }, [filters, rawData,selectedApplicants]);
       
       const paginatedData = filteredData.slice(startIndex, endIndex);
     
