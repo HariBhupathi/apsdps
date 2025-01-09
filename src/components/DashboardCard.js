@@ -18,11 +18,9 @@ const DashboardCard = ({rawData} ) => {
 
   const categories = ["Sr Consultant", "Consultant", "Data Analyst", "Trainee"];
 
-
   return (
     <div className="dash-card-outer">
       <h4 className='dash-card-heading' >Total applied candidates position wise </h4>
-
     <div className="dash-card-main">  
       {
         categories.map((category,index)=>{
@@ -50,7 +48,7 @@ const DashboardCard = ({rawData} ) => {
               <span>-</span>
               <span>{rejected} </span>
             </div>
-          </div> 
+            </div> 
           )
 
         })
