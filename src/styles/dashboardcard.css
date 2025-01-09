@@ -1,9 +1,9 @@
-
 .dash-card-outer{
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin: 10px 0;
+    background-color: lime;
 }
 .dash-card-heading{
     color: rgba(0, 0, 0, 0.538);
