@@ -5,7 +5,8 @@
     margin: 10px 0;   
 }
 .dash-card-heading{
-    color: rgba(0, 0, 0, 0.538);
+/*     color: rgba(0, 0, 0, 0.538); */
+    color:black;
     font-size: 25px;
     font-weight: 600;
     text-transform: capitalize;
